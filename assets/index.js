@@ -1,8 +1,5 @@
 import { html, render } from "./libs/preact.js";
 import HackerNewsApp from "./components/hackerNews.js";
-render(
-	html`
+render(html `
 		<${HackerNewsApp} />
-	`,
-	document.body
-);
+	`, document.body);
