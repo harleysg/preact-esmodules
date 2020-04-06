@@ -2,14 +2,15 @@
 	"name": "hackernew_preact_esmodule",
 	"version": "1.0.0",
 	"description": "",
-	"main": "index.js",
+	"main": "app.js",
 	"scripts": {
 		"css": "node-sass --include-path scss --watch ./assets/index.scss  ./assets/index.css",
 		"js": "tsc --watch ",
 		"serv": "servor ./ --reload --browse",
 		"ndmon-css": "nodemon -e scss --watch ./assets/index.scss -x \"npm run css\"",
 		"ndmon-js": "nodemon -e js --watch ./assets/index.js -x",
-		"start:dev": "npm run serv"
+		"start:dev": "npm run serv",
+		"start": "node app.js"
 	},
 	"author": "Harley Santos Garzón",
 	"license": "MIT",
@@ -17,5 +18,8 @@
 		"servor": "^3.2.0",
 		"typescript": "^3.8.3",
 		"node-sass": "^4.13.1"
+	},
+	"dependencies": {
+		"express": "^4.17.1"
 	}
 }
