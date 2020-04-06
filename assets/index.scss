@@ -57,7 +57,6 @@ a {
 		padding-top: 1em;
 	}
 	&wrapper {
-		display: grid;
 		width: 100%;
 		max-width: var(--layout-max-width);
 		margin: 0 auto;
@@ -70,6 +69,12 @@ a {
 		box-shadow: var(--theme-shadow-values) var(--theme-shadow-color);
 		background-color: var(--header-bg);
 		z-index: var(--zIndex-header);
+		&_wrapper {
+			display: grid;
+			min-height: 3rem;
+			grid-template-columns: 1fr max-content;
+			align-items: center;
+		}
 	}
 }
 
@@ -102,6 +107,17 @@ a {
 		&_title {
 			margin: 0;
 			padding: 0.5em 0;
+		}
+	}
+	&btn {
+		min-width: 2em;
+		min-height: 1.9em;
+		border: none;
+		background-color: transparent;
+		&[btn-type="icon-theme"] {
+			background-image: url(./images/icon-brightness.svg);
+			background-repeat: no-repeat;
+			background-position: center;
 		}
 	}
 }

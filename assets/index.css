@@ -48,7 +48,6 @@ a {
   padding-top: 1em; }
 
 .o-wrapper {
-  display: grid;
   width: 100%;
   max-width: var(--layout-max-width);
   margin: 0 auto; }
@@ -60,6 +59,11 @@ a {
   box-shadow: var(--theme-shadow-values) var(--theme-shadow-color);
   background-color: var(--header-bg);
   z-index: var(--zIndex-header); }
+  .o-header_wrapper {
+    display: grid;
+    min-height: 3rem;
+    grid-template-columns: 1fr max-content;
+    align-items: center; }
 
 .c-article {
   --card-bg: var(--theme-card-bg);
@@ -85,6 +89,16 @@ a {
   .c-article_title {
     margin: 0;
     padding: 0.5em 0; }
+
+.c-btn {
+  min-width: 2em;
+  min-height: 1.9em;
+  border: none;
+  background-color: transparent; }
+  .c-btn[btn-type="icon-theme"] {
+    background-image: url(./images/icon-brightness.svg);
+    background-repeat: no-repeat;
+    background-position: center; }
 
 /**
 * Specificity
