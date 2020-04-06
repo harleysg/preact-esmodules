@@ -9,7 +9,7 @@
 		"serv": "servor ./ --reload --browse",
 		"ndmon-css": "nodemon -e scss --watch ./assets/index.scss -x \"npm run css\"",
 		"ndmon-js": "nodemon -e js --watch ./assets/index.js -x",
-		"start": "npm run serv"
+		"start:dev": "npm run serv"
 	},
 	"author": "Harley Santos Garzón",
 	"license": "MIT",
