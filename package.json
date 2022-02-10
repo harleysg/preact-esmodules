@@ -17,7 +17,7 @@
 	"devDependencies": {
 		"servor": "^3.2.0",
 		"typescript": "^3.8.3",
-		"node-sass": "^4.13.1"
+		"node-sass": "^7.0.0"
 	},
 	"dependencies": {
 		"express": "^4.17.1"
